@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+.modal-lead{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 450px;
+    height: 320px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    .content-top{
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 15px;
+        gap: 16px;
+        width: 450px;
+        height: 70px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        filter: drop-shadow(0px 2px 16px rgba(0, 0, 0, 0.06));
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+        span{
+            width: 100%;
+            max-width: 370px;
+            height: 21px;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 21px;
+            color: #000000;
+            flex: none;
+            order: 0;
+            flex-grow: 1;
+        }
+        img{
+            width: 24px;
+            height: 24px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+    }
+    .content-medium{
+        .formulario{
+            padding: 15px;
+            display: grid;
+            input{
+                border: 1px solid rgba(0,0,0,.1) !important;
+                width: 100%;
+                height: 4rem;
+                padding: .7rem .5rem;
+                box-sizing: border-box;
+                border: 2px solid #222;
+                margin-bottom: 1rem;
+                border: none;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 21px;
+                &:focus{
+                    border: 1px solid #553AF6 !important;
+                }
+
+            }
+        }
+    }
+    .content-bottom{
+
+        padding: 15px;
+        gap: 8px;
+        width: 450px;
+        height: 70px;
+        background: rgba(0, 0, 0, 0.04);
+        flex: none;
+        order: 2; 
+        align-self: stretch;
+        flex-grow: 0;
+        border-radius:  0 0 16px 16px;
+        z-index: 2023;
+        button{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 15px;
+            gap: 10px;          
+            width: 418px;
+            height: 40px;           
+            background: #553AF6;
+            border-radius: 16px;    
+            flex: none;
+            order: 2;
+            flex-grow: 0;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+

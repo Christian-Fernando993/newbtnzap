@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal-lead">
+        <div class="content-top">
+            <span>Olá! Preencha os campos abaixo para iniciar a conversa no Whatsapp</span>
+            <img src="./modal_close.svg" alt="imagem de fechar">
+        </div>
+        <div class="content-medium">
+            <div class="formulario">
+                <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                    <input id="00N6f00000FmTIj" maxlength="100" name="00N6f00000FmTIj" size="20" type="hidden" value="LEAD CAPTURADO PELO CADASTRO BOTÃO DO WHATSAPP">
+                    <input id="nome" name="first_name" type="text"  required="" placeholder="Nome: *">
+                    <input id="email" name="email" type="email"  required="" placeholder="E-mail: *">
+                    <input id="telefone" name="phone" type="tel" required="" maxlength="15" placeholder="Telefone com DDD: *" onkeyup="handlePhone(event)">
+                    <input id="lead_source" maxlength="100" name="lead_source" size="20" type="hidden" value="Link do WhatsApp do Site">
+                    <input name="oid" type="hidden" value="00D4P0000010vdU">
+                    <input name="retURL" type="hidden" value="https://api.whatsapp.com/send?phone=5531986548748">
+                </form>
+        </div>
+        <div class="content-bottom">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"></form>
+                <button class="send" type="submit">Iniciar Conversa</button>
+            <form>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
